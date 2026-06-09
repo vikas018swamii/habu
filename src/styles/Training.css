@@ -1,0 +1,417 @@
+.training-hero {
+  background: var(--gradient-hero);
+  text-align: center;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.training-hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 168, 89, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* EV Industry Section */
+.ev-industry-section {
+  background: linear-gradient(135deg, rgba(240, 253, 244, 0.5) 0%, rgba(220, 252, 231, 0.3) 100%);
+}
+
+.ev-industry-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3.5rem;
+}
+
+.ev-industry-content .section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.25rem;
+}
+
+.ev-industry-text {
+  line-height: 1.9;
+}
+
+.ev-industry-text p {
+  color: var(--text-light);
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.ev-industry-text p:last-child {
+  margin-bottom: 0;
+}
+
+.course-objective {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(0, 168, 89, 0.05) 0%, rgba(0, 168, 89, 0.02) 100%);
+  border-radius: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.course-objective h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.course-objective p {
+  color: var(--text-light);
+  font-size: 1.0625rem;
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+.course-objective p:last-child {
+  margin-bottom: 0;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.highlight-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.highlight-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.highlight-card:hover .highlight-icon {
+  transform: scale(1.15) rotate(10deg);
+}
+
+.highlight-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.highlight-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.course-card {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.course-header h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.course-badge {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.badge-duration,
+.badge-level {
+  padding: 0.375rem 0.875rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.badge-duration {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.badge-level {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.course-description {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.course-modules {
+  margin-bottom: 1.5rem;
+}
+
+.course-modules h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.course-modules ul {
+  list-style: none;
+}
+
+.course-modules li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.course-modules li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.course-outcome {
+  background-color: var(--bg-light);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-outcome strong {
+  display: block;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.0625rem;
+}
+
+.course-outcome p {
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.course-btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Certificate Courses */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.certificate-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.certificate-card:hover .certificate-icon {
+  transform: scale(1.15) rotate(10deg);
+}
+
+.certificate-card h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.certificate-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.certificate-btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.enrollment-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.enrollment-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.enrollment-content > p {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.enrollment-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.enrollment-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.info-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.info-item strong {
+  display: block;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+  font-size: 1.0625rem;
+}
+
+.info-item p {
+  color: var(--text-light);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .ev-industry-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .ev-industry-content .section-title {
+    font-size: 1.75rem;
+  }
+
+  .ev-industry-text p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .course-objective {
+    padding: 1.5rem;
+  }
+
+  .course-objective h3 {
+    font-size: 1.5rem;
+  }
+
+  .course-objective p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .highlights-grid,
+  .courses-grid,
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .enrollment-buttons {
+    flex-direction: column;
+  }
+
+  .enrollment-buttons .btn {
+    width: 100%;
+  }
+
+  .enrollment-info {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-card h3 {
+    font-size: 1.25rem;
+  }
+}

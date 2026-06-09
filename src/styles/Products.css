@@ -1,0 +1,432 @@
+.products-hero {
+  background: var(--gradient-hero);
+  text-align: center;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 168, 89, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Simplified Product Cards - Image Only */
+.product-card-simple {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1.25rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card-simple:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.product-image-simple {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background: var(--bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-img-simple {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.product-card-simple:hover .product-img-simple {
+  transform: scale(1.05);
+}
+
+.product-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  background: var(--gradient-primary);
+  padding: 0;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 15s linear infinite;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.product-icon {
+  font-size: 5rem;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.product-card:hover .product-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.product-info {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.product-specs {
+  margin-bottom: 1.5rem;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.spec-item:last-child {
+  border-bottom: none;
+}
+
+.spec-label {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.spec-value {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.spec-value.price {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.product-features {
+  list-style: none;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.product-features li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+}
+
+.product-btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.customized-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.customized-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.customized-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customized-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.customized-card:hover .customized-img {
+  transform: scale(1.05);
+}
+
+.customized-icon {
+  font-size: 4.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.customized-card:hover .customized-icon {
+  transform: scale(1.15) rotate(10deg);
+}
+
+.customized-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.customized-description {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.customized-details {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item strong {
+  display: block;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.0625rem;
+}
+
+.detail-item span {
+  color: var(--text-light);
+}
+
+.benefits-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.benefits-list li {
+  padding: 0.25rem 0;
+  color: var(--text-light);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.benefits-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.customized-btn {
+  width: 100%;
+}
+
+.batteries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.battery-card {
+  padding: 2.5rem 2rem;
+}
+
+.battery-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.battery-image {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-light);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.battery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.battery-card:hover .battery-img {
+  transform: scale(1.05);
+}
+
+.battery-icon {
+  font-size: 4rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.battery-card:hover .battery-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.battery-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.battery-specs {
+  margin-bottom: 2rem;
+}
+
+.battery-spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.battery-spec-item:last-child {
+  border-bottom: none;
+}
+
+.battery-label {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.battery-value {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.battery-value.price {
+  color: var(--primary-color);
+  font-size: 1.125rem;
+}
+
+.battery-features {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.battery-features li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+}
+
+.battery-btn {
+  width: 100%;
+}
+
+.products-cta {
+  text-align: center;
+}
+
+.products-cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.products-cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.products-cta-content p {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .products-grid,
+  .customized-grid,
+  .batteries-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-image-simple {
+    height: 250px;
+  }
+}
