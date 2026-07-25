@@ -20,8 +20,7 @@ const Footer = () => {
               </div>
             </h3>
             <p className="footer-description">
-              Leading the electric mobility revolution in India with sustainable, 
-              affordable, and reliable EV solutions.
+              India's leading Manufacturer of custom mobile vending carts and electric vehicles.
             </p>
             <div className="footer-social">
               <a href="#" aria-label="Facebook">📘</a>
@@ -48,17 +47,15 @@ const Footer = () => {
               <li><Link to="/products">Electric Rickshaws</Link></li>
               <li><Link to="/products">Customized EVs</Link></li>
               <li><Link to="/products">Batteries</Link></li>
-              <li><Link to="/products">Charging Solutions</Link></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4>Contact</h4>
             <ul>
-              <li>📞 +91 1800-XXX-XXXX</li>
-              <li>✉️ info@habuev.in</li>
-              <li>📍 New Delhi, India</li>
-              <li>🕒 Mon-Sat: 9AM - 6PM</li>
+              <li>📞 +91 8209697573</li>
+              <li>✉️ jugnooev@gmail.com</li>
+              <li>📍 14 number vki sikar road, jaipur</li>
             </ul>
           </div>
         </div>
