@@ -13,16 +13,16 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="navbar-content">
-        <Link to="/" className="navbar-logo">
-  <img
-    src={logo}
-    alt="HABU Logo"
-    className="navbar-logo-img"
-  />
-</Link>
+          <Link to="/" className="navbar-logo">
+            <img
+              src={logo}
+              alt="HABU Logo"
+              className="navbar-logo-img"
+            />
+          </Link>
 
           <button
-            className="navbar-toggle"
+            className={`navbar-toggle ${isMenuOpen ? 'active' : ''}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
