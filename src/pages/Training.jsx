@@ -194,15 +194,15 @@ const Training = () => {
               <button className="btn btn-secondary certificate-btn">Enroll Now</button>
             </div>
             <div className="certificate-card card">
-              <div className="certificate-icon">🔌</div>
-              <h3>Certificate in Electric Vehicle Charger Repair</h3>
-              <p>Learn to repair and maintain EV charging equipment and charging infrastructure.</p>
+              <div className="certificate-icon">�</div>
+              <h3>Certificate in Electric Vehicle Systems Maintenance</h3>
+              <p>Learn to maintain EV electrical systems, power delivery, and performance optimization.</p>
               <button className="btn btn-secondary certificate-btn">Enroll Now</button>
             </div>
             <div className="certificate-card card">
-              <div className="certificate-icon">🔋</div>
-              <h3>Certificate in Electric Vehicle Battery Management</h3>
-              <p>Specialized course on battery systems, BMS, maintenance, and safety protocols.</p>
+              <div className="certificate-icon">🧰</div>
+              <h3>Certificate in Electric Vehicle Diagnostics</h3>
+              <p>Specialized course on EV system diagnostics, safety protocols, and preventive maintenance.</p>
               <button className="btn btn-secondary certificate-btn">Enroll Now</button>
             </div>
             <div className="certificate-card card">

@@ -4,7 +4,6 @@ import { productImages } from '../config/productImages'
 const Products = () => {
   const twoWheelers = productImages.twoWheelers
   const twoWheelersSection = productImages.twoWheelersSection
-  const batteries = productImages.batteries
 
   return (
     <main>
@@ -13,7 +12,7 @@ const Products = () => {
         <div className="container">
           <h1 className="page-title">Our Products</h1>
           <p className="page-subtitle">
-            Explore our range of electric rickshaws, customized solutions, and battery options
+            Explore our range of electric rickshaws and customized solutions
           </p>
         </div>
       </section>
@@ -70,31 +69,6 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Batteries Section */}
-      <section className="products-section section">
-        <div className="container">
-          <h2 className="section-title">Batteries & Charging Solutions</h2>
-          <p className="section-subtitle">
-            Choose from our range of high-quality batteries with warranty and support
-          </p>
-          <div className="batteries-grid">
-            {batteries.map((battery, index) => (
-              <div key={index} className="product-card-simple card">
-                <div className="product-image-simple">
-                  <img
-                    src={battery.image}
-                    alt={battery.type}
-                    className="product-img-simple"
-                    onError={(e) => {
-                      e.target.src = `https://via.placeholder.com/400x300/00a859/ffffff?text=${encodeURIComponent(battery.type)}`
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="products-cta section bg-light">

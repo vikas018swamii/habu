@@ -56,34 +56,4 @@ export const productImages = {
     // { image: '/images/products/your-image.jpg' },
   ],
 
-  // Batteries
-  batteries: [
-    {
-      type: 'Lithium-Ion 48V',
-      image: '/images/products/battery-li-60ah.jpg', // Add your image path here
-      capacity: '60Ah',
-      chargingTime: '4-5 hours',
-      warranty: '3 years',
-      priceRange: '₹35,000 - ₹45,000',
-      features: ['Long Life', 'Fast Charging', 'Lightweight']
-    },
-    {
-      type: 'Lithium-Ion 48V',
-      image: '/images/products/battery-li-50ah.jpg', // Add your image path here
-      capacity: '50Ah',
-      chargingTime: '3-4 hours',
-      warranty: '3 years',
-      priceRange: '₹28,000 - ₹35,000',
-      features: ['Compact', 'Efficient', 'Maintenance-Free']
-    },
-    {
-      type: 'Lead-Acid 48V',
-      image: '/images/products/battery-lead.jpg', // Add your image path here
-      capacity: '120Ah',
-      chargingTime: '8-10 hours',
-      warranty: '1 year',
-      priceRange: '₹15,000 - ₹20,000',
-      features: ['Affordable', 'Reliable', 'Easy Replacement']
-    }
-  ]
 }

@@ -103,7 +103,7 @@ const About = () => {
                 We want to take this business to next level. Our Aim is to Emerge as one of the World's Best 
                 Known company in the field of Electric vehicle industries. Our mission is to endeavor of making 
                 the world Beautiful, Greener and Pollution free for the generations and motivate people by making 
-                battery operated products which can be used in their daily routines and making India's first 
+                electric vehicle products which can be used in their daily routines while building India's first 
                 Green Factory.
               </p>
             </div>
