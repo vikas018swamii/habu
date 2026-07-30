@@ -214,6 +214,128 @@ const Home = () => {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
+<section className="process-section section">
+  <div className="container">
+
+    <span className="process-badge">
+      HOW IT WORKS
+    </span>
+
+    <h2 className="section-title">
+      Our 4-Step Process
+    </h2>
+
+    <p className="section-subtitle">
+      From concept to delivery, we help you launch your business on wheels
+      with a streamlined process.
+    </p>
+
+    <div className="process-grid">
+
+      <div className="process-card">
+        <div className="process-icon">
+          💬
+        </div>
+
+        <span className="process-number">
+          01
+        </span>
+
+        <h3>
+          Consultation
+        </h3>
+
+        <p>
+          We understand your business idea, requirements and budget before
+          starting the project.
+        </p>
+      </div>
+
+      <div className="process-card">
+        <div className="process-icon">
+          📐
+        </div>
+
+        <span className="process-number">
+          02
+        </span>
+
+        <h3>
+          Design & Planning
+        </h3>
+
+        <p>
+          Our experts prepare the layout, dimensions and customization plan
+          according to your business.
+        </p>
+      </div>
+
+      <div className="process-card">
+        <div className="process-icon">
+          🛠️
+        </div>
+
+        <span className="process-number">
+          03
+        </span>
+
+        <h3>
+          Manufacturing
+        </h3>
+
+        <p>
+          Skilled engineers manufacture your vehicle using premium materials
+          with strict quality checks.
+        </p>
+      </div>
+
+      <div className="process-card">
+        <div className="process-icon">
+          🚚
+        </div>
+
+        <span className="process-number">
+          04
+        </span>
+
+        <h3>
+          Delivery & Support
+        </h3>
+
+        <p>
+          We deliver your customized vehicle and provide after-sales support
+          whenever required.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="process-cta">
+
+      <h3>
+        Ready to Bring Your Ideal Cart to Life?
+      </h3>
+
+      <p>
+        Contact our team today and take the first step towards your custom
+        business cart.
+      </p>
+
+      <Link
+        to="/contact"
+        className="btn btn-primary btn-large"
+      >
+        Schedule Your Consultation →
+      </Link>
+
+    </div>
+
+  </div>
+</section>
+
+{/* CTA SECTION */}
+
       {/* CTA SECTION */}
       <section className="cta-section section">
         <div className="container">

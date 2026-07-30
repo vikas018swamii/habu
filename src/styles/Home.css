@@ -1,3 +1,182 @@
+/* ===================================================
+   PROCESS SECTION
+=================================================== */
+
+.process-section {
+  background: #f8fffb;
+  padding: 90px 0;
+}
+
+.process-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #e8f8ef;
+  color: #00a859;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.process-section .section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #1f2937;
+}
+
+.process-section .section-subtitle {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.process-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  border-color: #00a859;
+  box-shadow: 0 18px 40px rgba(0, 168, 89, 0.18);
+}
+
+.process-number {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  font-size: 42px;
+  font-weight: 800;
+  color: #00a859;
+  opacity: 0.15;
+}
+
+.process-icon {
+  width: 70px;
+  height: 70px;
+  background: #e8f8ef;
+  color: #00a859;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.process-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.process-card p {
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.process-cta {
+  margin-top: 70px;
+  background: linear-gradient(135deg, #00a859, #008a4a);
+  border-radius: 24px;
+  text-align: center;
+  color: white;
+  padding: 60px 40px;
+}
+
+.process-cta h3 {
+  font-size: 36px;
+  margin-bottom: 18px;
+  color: white;
+}
+
+.process-cta p {
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 35px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+.process-cta .btn {
+  background: white;
+  color: #00a859;
+  font-weight: 700;
+  padding: 16px 34px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.process-cta .btn:hover {
+  background: #f3fff8;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 991px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-section .section-title {
+    font-size: 34px;
+  }
+
+  .process-cta {
+    padding: 45px 25px;
+  }
+
+  .process-cta h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .process-card {
+    padding: 28px;
+  }
+
+  .process-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .process-number {
+    font-size: 34px;
+  }
+
+  .process-card h3 {
+    font-size: 21px;
+  }
+
+  .process-section .section-title {
+    font-size: 30px;
+  }
+
+  .process-section .section-subtitle {
+    font-size: 16px;
+  }
+
+  .process-cta h3 {
+    font-size: 24px;
+  }
+}
 /* Hero Section */
 .hero {
   background: var(--gradient-hero);
